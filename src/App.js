@@ -15,6 +15,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import Services from "./pages/Service.jsx";
 import Property from "./pages/Properties.jsx";
 import Construction from "./pages/Construction.jsx";
+import NotFound from "./pages/NotFound";
 function App() {
   // Initialize AOS on app load
   useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/Properties" element={<Property />} />
         <Route path="/construction" element={<Construction />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

@@ -28,10 +28,32 @@ const blogs = [
 ];
 
 const awards = [
-  { year: 2018, awards: ["Property Awards", "Best Home", "In-Design"] },
-  { year: 2019, awards: ["Property Awards", "Best Home", "In-Design"] },
-  { year: 2020, awards: ["Property Awards", "Best Home", "In-Design"] },
+  { 
+    year: 2018, 
+    awards: [
+      "Best Emerging Tech Solutions Provider",
+      "Excellence in Real Estate Development",
+      "Innovative Construction Project Award"
+    ] 
+  },
+  { 
+    year: 2019, 
+    awards: [
+      "Top Digital Transformation Company",
+      "Outstanding Property Management Firm",
+      "Sustainable Building Excellence"
+    ] 
+  },
+  { 
+    year: 2020, 
+    awards: [
+      "Leader in Smart City Development",
+      "Best Customer-Centric Real Estate Services",
+      "Construction Safety & Quality Award"
+    ] 
+  }
 ];
+
 
 const ProjectsPage = () => {
   return (
@@ -67,7 +89,7 @@ const ProjectsPage = () => {
             <div key={blog.id} className="blog-card">
               <img src={blog.image} alt={blog.title} />
               <h3>{blog.title}</h3>
-<Link to="/ProjectsPage" className="btn">Read more</Link>
+<Link to="/services" className="btn">Read more</Link>
             </div>
           ))}
         </div>
@@ -90,7 +112,7 @@ dedication to building solutions that make a lasting impact.</p>
             </div>
           ))}
         </div>
-<Link to="/ProjectsPage" className="btn">Learn more</Link>
+<Link to="/services" className="btn">Learn more</Link>
       </section>
 
     </div>
